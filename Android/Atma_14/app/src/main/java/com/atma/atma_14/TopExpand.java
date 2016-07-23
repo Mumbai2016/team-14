@@ -55,19 +55,19 @@ public class TopExpand extends AppCompatActivity {
                 break;
             case "Top NGO":
 
-                currentName.setText("Ronak Parmar");
-                currentImage.setImageResource(R.drawable.boy);
-                currentSummary.setText("Living in Harmony’ training programme has highly improved the happiness quotient of our employees. We realised that a happy family of every employee results in better productivity at work effortlessly and it inevitably results in higher customer satisfaction.");
+                currentName.setText("Mama's Children");
+                currentImage.setImageResource(R.drawable.ngo1);
+                currentSummary.setText(" Atma, to meet us, has been about meeting an organization that has integrity and is intelligent and noble. That some people exist who do care honestly about giving, and are also wise about how to give, and that they give with no expectations of returns is an eye opener. Atma has touched many individuals with wise counsel – thereby inspiring them to break open their shells and lead better, richer lives.");
 
-                currentProject1.setImageResource(R.drawable.ngo4);
-                currentProject2.setImageResource(R.drawable.ngo3);
+                currentProject1.setImageResource(R.drawable.ngo1);
+                currentProject2.setImageResource(R.drawable.ngo4);
                 currentProject3.setImageResource(R.drawable.ngo5);
-                currentProject4.setImageResource(R.drawable.ngo1);
+                currentProject4.setImageResource(R.drawable.ngo3);
 
-                currentProjectTitle1.setText("CFSD");
+                currentProjectTitle4.setText("CFSD");
                 currentProjectTitle2.setText("ASCI");
                 currentProjectTitle3.setText("Bread for the world");
-                currentProjectTitle4.setText("Mama's Children");
+                currentProjectTitle1.setText("Smile");
 
                 TopTypeIndicator.setText("Top Partner Manager");
 
