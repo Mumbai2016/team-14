@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <title>login form</title>    
     <link rel="stylesheet" href="../css/project_manager.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/project_manager.js" type="text?javascript"></script>
 </head>
 <body>
-    <div class="area">
+    <div id="area">
 
     </div>
     
@@ -19,7 +21,7 @@
             
             </li>
             <li>
-                <a href="#">
+                <a href="http://localhost/team-14/html/dashboard.php" onclick="return go(this);">
                     <i class="fa fa-home fa-2x"></i>
                     <span class="nav-text">
                         Dashboard
