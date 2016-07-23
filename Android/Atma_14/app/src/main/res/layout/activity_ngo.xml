@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.atma.atma_14.NGOActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -50,15 +54,174 @@
                 android:layout_marginLeft="16dp"
                 />
 
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/NGOLayout1"
+                android:layout_marginTop="16dp">
 
-            <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/recyclerViewNGO"
-                android:layout_marginTop="20dp"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/girl"
+                    android:id="@+id/NGOImage1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="32dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/NGOProjectName1"
+                        android:text="Project Name"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Project Details...."
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/NGOProjectDetails1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/NGOLayout2"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/girl"
+                    android:id="@+id/NGOImage2"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="32dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/NGOProjectName2"
+                        android:text="Project Name"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Project Details...."
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/NGOProjectDetails2"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/NGOLayout3"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/girl"
+                    android:id="@+id/NGOImage3"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="32dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/NGOProjectName3"
+                        android:text="Project Name"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Project Details...."
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/NGOProjectDetails3"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="16dp"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/NGOLayout4"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/girl"
+                    android:id="@+id/NGOImage4"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="32dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/NGOProjectName4"
+                        android:text="Project Name"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Project Details...."
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/NGOProjectDetails4"/>
+
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
+    </ScrollView>
 </FrameLayout>

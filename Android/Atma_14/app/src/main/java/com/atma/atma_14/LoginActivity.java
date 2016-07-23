@@ -1,5 +1,6 @@
 package com.atma.atma_14;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -54,7 +55,13 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginMethod(String userName, String password) {
        if (userName.contains("atma") && password.contains("123456")){
-            Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+
+           switch (userType){
+               case "NGO":
+                   startActivity(new Intent(this,NGOActivity.class));
+                   break;
+           }
+
         }else{
             Toast.makeText(LoginActivity.this, "Invalid Login! Please Login Again", Toast.LENGTH_SHORT).show();
             edUsername.setText("");
