@@ -17,12 +17,21 @@ echo "Connected successfully";
  $my_id_array=mysqli_fetch_assoc($result);
    
     $pass_array=$my_id_array['password'];
+    $role = $my_id_array['role'];
     if($pass_array==$password)
     {
-	 session_start();
-	 $_SESSION["username"]=$username;
-     header("Location:http://localhost:83/codeforgood/team-14/html/project_manager.php");
-     print "success";
+    	session_start();
+    	$_SESSION["username"]=$username;
+        if( $role == "volunteer"){
+            header("../html/volunteer.php");
+        }
+        if( $role == "ngo_patner" ){
+
+        }
+        if( $role == "partnership_manager" ){
+            header("../html/project_manager.php");
+        }
+        print "success";
     }
     else
     {
