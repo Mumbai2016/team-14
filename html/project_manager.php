@@ -11,10 +11,7 @@
     </script>
 </head>
 <body>
-    <div id="area">
-
-    </div>
-    
+    <div>
     <nav class="main-menu">
         <ul>
             <li>
@@ -113,5 +110,10 @@
             </li>  
         </ul>
     </nav>
+
+    <div id="area">
+    </div>
+    </div>
+
 </body>
 </html>

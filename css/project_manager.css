@@ -35,6 +35,7 @@ overflow:hidden;
 transition:width .05s linear;
 -webkit-transform:translateZ(0) scale(1,1);
 z-index:1000;
+float: left;
 }
 
 .main-menu>ul {
@@ -117,10 +118,12 @@ color:#fff;
 background-color:#5fa2db;
 }
 div#area {
+position: relative;
 float: left;
 background: #e2e2e2;
-width: 100%;
+width: 95%;
 height: 100%;
+margin-left: 4em;
 }
 @font-face {
   font-family: 'Titillium Web';
