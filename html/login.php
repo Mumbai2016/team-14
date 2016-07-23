@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>login form</title>    
+    <title>Atma</title>    
     <link rel="stylesheet" href="../css/reset.css">
     <style>
       * {
