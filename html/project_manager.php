@@ -4,7 +4,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
-    <title>login form</title>    
+    <title>Atma</title>    
     <link rel="stylesheet" href="../css/project_manager.css" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/project_manager.js" type="text/javascript"></script>
