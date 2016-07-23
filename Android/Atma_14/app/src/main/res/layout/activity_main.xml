@@ -1,16 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.atma.atma_14.MainActivity">
 
-    <TextView
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <android.support.v7.widget.Toolbar
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:background="@color/colorPrimary"
+           android:id="@+id/login_as_toolbar">
+
+       </android.support.v7.widget.Toolbar>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:background="@color/colorPrimary">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Login As"
+               android:textSize="21sp"
+               android:textStyle="bold"
+               android:textColor="#ffffff"
+               android:layout_gravity="bottom"
+               android:paddingLeft="16dp"
+               android:paddingBottom="16dp"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="32dp"
+           android:layout_marginLeft="16dp">
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/login_as_radiogroup">
+
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Volunteer"
+                   android:textSize="16sp"
+                   android:padding="8dp"
+                   android:id="@+id/login_as_radiobutton_volunteer"
+                   android:layout_marginBottom="8dp"
+                   />
+
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="NGO"
+                   android:textSize="16sp"
+                   android:padding="8dp"
+                   android:id="@+id/login_as_radiobutton_ngo"
+                   android:layout_marginBottom="8dp"
+                   />
+
+               <RadioButton
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Project Manager"
+                   android:textSize="16sp"
+                   android:padding="8dp"
+                   android:id="@+id/login_as_radiobutton_partnership_manager"
+                   android:layout_marginBottom="8dp"
+                   />
+
+           </RadioGroup>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/next"
+        android:id="@+id/login_as_nextfab"
+        android:onClick="nextClick"
+        />
+
+</FrameLayout>
