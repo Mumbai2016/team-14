@@ -175,9 +175,9 @@ body {
     
 <div class="login">
   <header class="login-header"><span class="text">LOGIN</span><span class="loader"></span></header>
-  <form class="login-form">
-    <input type="text" placeholder="Username" class="login-input"/>
-    <input type="password" placeholder="Password" class="login-input"/>
+  <form class="login-form" action="../php/login.php" method="post">
+    <input type="text" placeholder="Username" name="username" class="login-input"/>
+    <input type="password" placeholder="Password" name="password" class="login-input"/>
     <button type="submit" class="login-btn">login</button>
   </form>
 </div>

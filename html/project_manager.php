@@ -16,7 +16,10 @@
             <li>
                 <i class="fa fa-home fa-2x"></i>
                 <span class="nav-text">
-                    Account
+                    <?php
+					        session_start();
+	                        echo $_SESSION["username"];
+					?>
                 </span>
             
             </li>
