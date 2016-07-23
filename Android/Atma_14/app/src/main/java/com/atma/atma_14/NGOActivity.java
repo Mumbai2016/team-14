@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -11,7 +12,7 @@ public class NGOActivity extends AppCompatActivity implements View.OnClickListen
 
     LinearLayout ProjectClick1,ProjectClick2,ProjectClick3,ProjectClick4;
     CircleImageView ProjectImage1,ProjectImage2,ProjectImage3,ProjectImage4;
-
+    TextView Title,Summary;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,11 @@ public class NGOActivity extends AppCompatActivity implements View.OnClickListen
         ProjectClick3.setOnClickListener(this);
         ProjectClick4.setOnClickListener(this);
 
+        Title.setText("Bread for the World");
+        Summary.setText("Extremely impressed with the satisfaction and happiness I saw in the girls’ faces at ATMA Gurukulam. Even the people taking care of the girls appear committed to a noble cause. A great place and wish them the very best. Exceeded all my optimis");
+
+        ProjectImage1.setImageResource(R.drawable.ngo5);
+        
     }
 
 
@@ -36,6 +42,9 @@ public class NGOActivity extends AppCompatActivity implements View.OnClickListen
         ProjectImage2 = (CircleImageView) findViewById(R.id.NGOImage2);
         ProjectImage3 = (CircleImageView) findViewById(R.id.NGOImage3);
         ProjectImage4 = (CircleImageView) findViewById(R.id.NGOImage4);
+
+        Title = (TextView) findViewById(R.id.ngoname);
+        Summary = (TextView) findViewById(R.id.ngosummary);
     }
 
 
