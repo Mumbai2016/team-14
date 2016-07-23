@@ -86,14 +86,32 @@
              <fieldset>
              <legend>Educational Information</legend>
              <br>
+             <div class="form-row">
+                <label>
+                    <span>Degree</span>
+             <input type="text" name="degree">
+             </label>
+             </div>
+             <div class="form-row">
+                <label>
+                    <span>Field Expertise</span>
+             <input type="text" name="expertise">
+             </label>
+             </div>
             </fieldset>
              <br>
              <fieldset>
-             <legend>Previous Experiences</legend>
+             <legend>Imp Info</legend>
              <br>
              <div class="form-row">
                 <label>
-                    <span>Experiences</span>
+                    <span>What motivated you to apply?</span>
+             <input type="textarea" name="exp">
+             </label>
+             </div>
+             <div class="form-row">
+                <label>
+                    <span>Past Experiences</span>
              <input type="textarea" name="exp">
              </label>
              </div>
