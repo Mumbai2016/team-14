@@ -11,5 +11,6 @@ public class TopExpand extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_expand);
         TopType = getIntent().getStringExtra("TopType");
+
     }
 }
