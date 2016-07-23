@@ -1,10 +1,13 @@
 package com.atma.atma_14;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -17,7 +20,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
     Typeface OpenSansRegular;
     CircleImageView topVolunteer,topNGO,topPartnerManager;
     Button login;
-    LinearLayout topVolunteerClick,topNGOClick,topPartnerManagerClick;
+    LinearLayout topVolunteerClick,topNGOClick,topPartnerManagerClick,RevealContainer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         topPartnerManager = (CircleImageView) findViewById(R.id.topngo_image);
         topPartnerManagerClick = (LinearLayout) findViewById(R.id.toppartnermanager_layout);
         textPartnerManager = (TextView) findViewById(R.id.toppartnermanager_textview);
+        RevealContainer = (LinearLayout) findViewById(R.id.reveal_container_dashboard);
     }
 
     @Override
@@ -65,11 +69,44 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 startActivity(new Intent(this,MainActivity.class));
                 break;
             case R.id.topvalunteer_layout:
+                revealEffect("Top Valunteer");
                 break;
             case R.id.toppartnermanager_layout:
+                revealEffect("Top Partner Manager");
                 break;
             case R.id.topngo_layout:
+                revealEffect("Top NGO");
                 break;
         }
+    }
+
+    private void revealEffect(final String s) {
+        int CenterX,CenterY;
+        CenterX = RevealContainer.getWidth()/2;
+        CenterY = RevealContainer.getHeight();
+
+        float radius = (float) Math.hypot(CenterX,CenterY);
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            Animator anim = ViewAnimationUtils.createCircularReveal(RevealContainer,CenterX,CenterY,0,radius);
+            RevealContainer.setVisibility(View.VISIBLE);
+
+            anim.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    super.onAnimationEnd(animation);
+                    Intent i = new Intent(getBaseContext(),TopExpand.class);
+                    i.putExtra("TopType",s);
+                    startActivity(i);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                }
+            });
+
+        }else{
+            Intent i = new Intent(getBaseContext(),TopExpand.class);
+            i.putExtra("TopType",s);
+            startActivity(i);
+        }
+
     }
 }
