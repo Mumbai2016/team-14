@@ -25,7 +25,7 @@
             
             </li>
             <li>
-                <a href ="#" onclick="load()"   >
+                <a href ="#" onclick="load_volunteer_details()"   >
                     <i class="fa fa-users fa-2x"></i>
                     <span class="nav-text">
                         Volunteers  
@@ -34,7 +34,7 @@
               
             </li>
             <li class="has-subnav">
-                <a href="#">
+                <a href="#" onclick="load_edit_profile()" >
                     <i class="fa fa-cog fa-2x"></i>
                     <span class="nav-text">
                         Edit Profile
