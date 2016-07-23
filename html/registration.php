@@ -81,26 +81,13 @@
                 </label>
             </div>
 
-            <div class="form-row">
-                <label>
-                    <span>Dropdown</span>
-                    <select name="dropdown">
-                        <option>Option One</option>
-                        <option>Option Two</option>
-                        <option>Option Three</option>
-                        <option>Option Four</option>
-                    </select>
-                </label>
-            </div>
             </fieldset>
-            </form>
-            <form class="form-basic" method="post" action="#">
+            <br>
              <fieldset>
              <legend>Educational Information</legend>
              <br>
             </fieldset>
-            </form>
-            <form class="form-basic" method="post" action="#">
+             <br>
              <fieldset>
              <legend>Previous Experiences</legend>
              <br>
@@ -108,10 +95,18 @@
                 <label>
                     <span>Experiences</span>
              <input type="textarea" name="exp">
+             </label>
+             </div>
+             <div class="form-row">
+                <label>
+                    <span>Upload Resume</span>
+            <input type="file" name="resume">
+             </label>
+             </div>
             </fieldset>
             
             <div class="form-row">
-                <button type="submit">Submit Form</button>
+                <button type="submit">Submit Application</button>
             </div>
             </form>
 
