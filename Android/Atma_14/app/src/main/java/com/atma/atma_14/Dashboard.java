@@ -95,12 +95,15 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     super.onAnimationEnd(animation);
+                    RevealContainer.setVisibility(View.INVISIBLE);
                     Intent i = new Intent(getBaseContext(),TopExpand.class);
                     i.putExtra("TopType",s);
                     startActivity(i);
                     overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
             });
+
+            anim.start();
 
         }else{
             Intent i = new Intent(getBaseContext(),TopExpand.class);

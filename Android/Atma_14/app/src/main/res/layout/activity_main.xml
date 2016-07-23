@@ -17,7 +17,7 @@
            android:background="@color/colorPrimary"
            android:id="@+id/login_as_toolbar"
            android:titleTextColor="#ffffff"
-           >
+           android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
        </android.support.v7.widget.Toolbar>
 
