@@ -15,10 +15,12 @@
     <nav class="main-menu">
         <ul>
             <li>
-                <i class="fa fa-home fa-2x"></i>
-                <span class="nav-text">
-                    Account
-                </span>
+                <a href="volunteer.php" >
+                    <i class="fa fa-user fa-2x"></i>
+                    <span class="nav-text">
+                        Account
+                    </span>
+                </a>
             
             </li>
             <li>

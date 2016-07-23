@@ -15,14 +15,15 @@
     <nav class="main-menu">
         <ul>
             <li>
-                <i class="fa fa-home fa-2x"></i>
-                <span class="nav-text">
-                    <?php
-					        session_start();
-	                        echo $_SESSION["username"];
-					?>
-                </span>
-            
+                <a href="project_manager" >
+                    <i class="fa fa-user fa-2x"></i>
+                    <span class="nav-text">
+                        <?php
+    					        session_start();
+    	                        echo $_SESSION["username"];
+    					?>
+                    </span>
+                </a>
             </li>
             <li>
                 <a href ="#" onclick="load()"   >
