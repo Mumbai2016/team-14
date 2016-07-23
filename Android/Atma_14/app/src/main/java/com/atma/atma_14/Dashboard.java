@@ -1,5 +1,6 @@
 package com.atma.atma_14;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,6 +27,9 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         linkFonts();
 
         login.setOnClickListener(this);
+        topNGOClick.setOnClickListener(this);
+        topPartnerManagerClick.setOnClickListener(this);
+        topVolunteerClick.setOnClickListener(this);
     }
 
     private void linkFonts() {
@@ -56,6 +60,16 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-
+        switch (view.getId()){
+            case R.id.dashboard_loginbutton:
+                startActivity(new Intent(this,MainActivity.class));
+                break;
+            case R.id.topvalunteer_layout:
+                break;
+            case R.id.toppartnermanager_layout:
+                break;
+            case R.id.topngo_layout:
+                break;
+        }
     }
 }
