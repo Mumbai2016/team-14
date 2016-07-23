@@ -33,8 +33,14 @@
              <br>
             <div class="form-row">
                 <label>
-                    <span>Full name</span>
-                    <input type="text" name="name" >
+                    <span>First Name</span>
+                    <input type="text" name="fname" >
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Last Name</span>
+                    <input type="text" name="lname" >
                 </label>
             </div>
             <div class="form-row">
