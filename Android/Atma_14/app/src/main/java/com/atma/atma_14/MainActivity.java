@@ -1,5 +1,6 @@
 package com.atma.atma_14;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
                 selectedLoginType = "Volunteer";
                 break;
         }
+
+        Intent i = new Intent(this,LoginActivity.class);
+        i.putExtra("UserType",selectedLoginType);
+        startActivity(i);
     }
 
     private void setupViews() {
