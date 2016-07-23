@@ -36,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.login_as_radiobutton_partnership_manager:
                 selectedLoginType = "Partnership Manager";
                 break;
-            case R.id.login_as_radiobutton_volunteer:
-                selectedLoginType = "Volunteer";
-                break;
         }
 
         Intent i = new Intent(this,LoginActivity.class);
@@ -48,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViews() {
         userTypeGroup = (RadioGroup) findViewById(R.id.login_as_radiogroup);
-        radioVolunteer = (RadioButton) findViewById(R.id.login_as_radiobutton_volunteer);
         radioNGO = (RadioButton) findViewById(R.id.login_as_radiobutton_ngo);
         radioProjectManager = (RadioButton) findViewById(R.id.login_as_radiobutton_partnership_manager);
         fabNext = (FloatingActionButton) findViewById(R.id.login_as_nextfab);

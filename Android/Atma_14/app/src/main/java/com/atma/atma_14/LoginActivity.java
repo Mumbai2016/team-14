@@ -53,15 +53,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginMethod(String userName, String password) {
-     /*   if (userName.contains("atma") && password.contains("123456")){
+       if (userName.contains("atma") && password.contains("123456")){
             Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(LoginActivity.this, "Invalid Login! Please Login Again", Toast.LENGTH_SHORT).show();
             edUsername.setText("");
             edPassword.setText("");
-        } */
+        }
+       // Log.d("MySQL",userName+"");
 
-        new AsyncHttpTask().execute("http://ec2-54-169-134-50.ap-southeast-1.compute.amazonaws.com/loginandroid.php?username="+userName+"&password="+password);
+       // new AsyncHttpTask().execute("http://ec2-54-169-134-50.ap-southeast-1.compute.amazonaws.com/loginandroid.php?username="+userName+"&password="+password);
 
     }
 
@@ -81,6 +82,7 @@ public class LoginActivity extends AppCompatActivity {
             Integer result = 0;
             try {
                 /* forming th java.net.URL object */
+                Log.d("MySQL",result+"");
                 URL url = new URL(params[0]);
                 urlConnection = (HttpURLConnection) url.openConnection();
 
@@ -98,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (statusCode ==  200) {
                     inputStream = new BufferedInputStream(urlConnection.getInputStream());
                     String response = convertInputStreamToString(inputStream);
+                    Log.d("MySQL",result+"");
                     parseResult(response);
                     result = 1; // Successful
                 }else{
@@ -106,6 +109,9 @@ public class LoginActivity extends AppCompatActivity {
             } catch (Exception e) {
                 Log.d("Exception", e.getLocalizedMessage());
             }
+
+            Log.d("MySQL",result+"");
+
             return result; //"Failed to fetch data!";
         }
 

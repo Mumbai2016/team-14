@@ -53,16 +53,6 @@
                <RadioButton
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="Volunteer"
-                   android:textSize="16sp"
-                   android:padding="8dp"
-                   android:id="@+id/login_as_radiobutton_volunteer"
-                   android:layout_marginBottom="8dp"
-                   />
-
-               <RadioButton
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
                    android:text="NGO"
                    android:textSize="16sp"
                    android:padding="8dp"
