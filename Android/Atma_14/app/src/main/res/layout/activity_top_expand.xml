@@ -29,6 +29,7 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:src="@drawable/girl"
+            android:id="@+id/current_image"
             android:layout_gravity="center_horizontal"
             />
 
@@ -43,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
+                android:id="@+id/current_name"
                 android:textSize="21sp"
                 android:textStyle="bold"/>
 
@@ -50,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Summary..."
+                android:id="@+id/current_summary"
                 android:textSize="18sp"
                 />
 
