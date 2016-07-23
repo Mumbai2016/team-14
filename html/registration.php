@@ -108,7 +108,6 @@
                 <label>
                     <span>Experiences</span>
              <input type="textarea" name="exp">
-             
             </fieldset>
             
             <div class="form-row">
