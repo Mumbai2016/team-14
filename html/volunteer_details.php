@@ -17,7 +17,7 @@
 <div class="main-container">
     <div class="container">
     <div class="page-header">
-        <h1><center>VOLUNTEER</center></h1>
+        <h1><center>VOLUNTEERS</center></h1>
     </div>
     <div class="container">
         
