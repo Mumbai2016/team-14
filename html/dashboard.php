@@ -12,10 +12,10 @@
     <title>Round About - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="startbootstrap-round-about-1.0.4\css\bootstrap.min.css" rel="stylesheet">
+    <link href="../css/startbootstrap-round-about-1.0.4/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="startbootstrap-round-about-1.0.4\css\round-about.css" rel="stylesheet">
+    <link href="../css/startbootstrap-round-about-1.0.4/css/round-about.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -85,7 +85,7 @@
                 <h2 class="page-header">Our Top Performers</h2>
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="girl1.jpe" alt="">
+                <img class="img-circle img-responsive img-center" src="../img/girl1.jpe" alt="">
                 <h3>Niveta Lavathe
                     <small>Volunteer</small>
                 </h3>
@@ -147,10 +147,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 

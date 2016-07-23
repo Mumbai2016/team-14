@@ -1,16 +1,17 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>login form</title>    
-    <link rel="stylesheet" href="../css/project_manager.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
-    <script src="../js/project_manager.js" type="text?javascript"></script>
+    <meta http-equiv="content-type" content="text/php; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <title>Atma</title>    
+    <link rel="stylesheet" href="../css/project_manager.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/project_manager.js" type="text/javascript"></script>
+    </script>
 </head>
 <body>
-    <div id="area">
-
-    </div>
-    
+    <div>
     <nav class="main-menu">
         <ul>
             <li>
@@ -24,7 +25,7 @@
             
             </li>
             <li>
-                <a href="http://localhost/team-14/html/dashboard.php" onclick="return go(this);">
+                <a href ="#" onclick="load()"   >
                     <i class="fa fa-home fa-2x"></i>
                     <span class="nav-text">
                         Dashboard
@@ -112,5 +113,10 @@
             </li>  
         </ul>
     </nav>
+
+    <div id="area">
+    </div>
+    </div>
+
 </body>
 </html>

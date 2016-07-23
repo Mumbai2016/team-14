@@ -21,7 +21,7 @@
 	<td>dsdss@gmail.com</td>
 	<td>Motivation</td>
 	<td>sddsdsd.pdf</td>
-	<td><input type="button" name="select" value="SCREEN"></td>
+	<td><input type="button" name="select" value="SCREENING"></td>
 	<td><input type="button" name="select" value="SELECT"></td></tr>
 	</table>
 	</div>
