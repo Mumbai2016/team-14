@@ -43,14 +43,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginMethod(String userName, String password) {
-        if(userName == "atma" && password == "123456"){
-            Toast.makeText(LoginActivity.this, "Successfully Logged In", Toast.LENGTH_SHORT).show();
+        if (userName.contains("atma") && password.contains("123456")){
+            Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
         }else{
-            if(userName != "atma"){
-                edUsername.setError("Username doesn't match");
-            }else if(password != "123456"){
-                edUsername.setError("Password doesn't match");
-            }
+            Toast.makeText(LoginActivity.this, "Invalid Login! Please Login Again", Toast.LENGTH_SHORT).show();
+            edUsername.setText("");
+            edPassword.setText("");
         }
     }
 
