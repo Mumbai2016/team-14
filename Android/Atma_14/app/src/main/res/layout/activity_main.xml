@@ -15,7 +15,9 @@
            android:layout_width="match_parent"
            android:layout_height="?attr/actionBarSize"
            android:background="@color/colorPrimary"
-           android:id="@+id/login_as_toolbar">
+           android:id="@+id/login_as_toolbar"
+           android:titleTextColor="#ffffff"
+           >
 
        </android.support.v7.widget.Toolbar>
 
