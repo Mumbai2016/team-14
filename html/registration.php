@@ -103,7 +103,7 @@
              <div class="form-row">
                 <label>
                     <span>What motivated you to apply?</span>
-             <input type="textarea" name="exp">
+             <input type="textarea" name="motivation">
              </label>
              </div>
              <div class="form-row">
