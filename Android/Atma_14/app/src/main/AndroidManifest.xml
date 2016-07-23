@@ -24,7 +24,7 @@
         <activity
             android:name=".TopExpand"
             android:parentActivityName=".Dashboard" />
-        <activity android:name=".NGOActivity"></activity>
+        <activity android:name=".NGOActivity" />
     </application>
 
 </manifest>
