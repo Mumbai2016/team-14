@@ -9,8 +9,8 @@
 
 	<title>volunteer Registration Form</title>
 
-	<link rel="stylesheet" href="style/assets/demo.css">
-	<link rel="stylesheet" href="style/assets/form-basic.css">
+	<link rel="stylesheet" href="http:\\localhost\CFG_PROJECT\team-14\css\assets\demo.css">
+	<link rel="stylesheet" href="http:\\localhost\CFG_PROJECT\team-14\css\assets\form-basic.css">
 
 </head>
 <body>
