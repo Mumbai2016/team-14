@@ -11,7 +11,7 @@ if (!$conn) {
 } 
 echo "Connected successfully";
  //$query="se";
- $query="select password from login where username='$username'";
+ $query="select role,password from login where username='$username'";
  $result=mysqli_query($conn,$query) or die(mysql_error()." in ".$query);
  
  $my_id_array=mysqli_fetch_assoc($result);
@@ -21,15 +21,31 @@ echo "Connected successfully";
     {
 	 session_start();
 	 $_SESSION["username"]=$username;
-     header("Location:http://localhost:83/codeforgood/team-14/html/project_manager.php");
+	 //$query2 = mysql_query("SELECT * FROM users WHERE role='volunteer'");
+     //$numrow = mysql_num_rows($query2);
+
+   
+        // LOGIN code
+       
+            $rolename = $my_id_array['role'];
+          //  $dbpassword = $row['$password_login'];
+        
+
+        
+        if ($rolename== "volunteer") {
+             header("Location:http://localhost:83/codeforgood/team-14/html/volunteer.php");
+        } 
+		else if ($rolename == "project_partner")
+		{
+		header("Location:http://localhost:83/codeforgood/team-14/html/project_manager.php");
+	     }
+	//else
+	//header("Location:http://localhost:83/codeforgood/team-14/html/project_manager.php");
      print "success";
     }
     else
     {
 	 print "failure";
 	}
-   mysqli_close($conn);
-
-
-
+    mysqli_close($conn);
 ?>
