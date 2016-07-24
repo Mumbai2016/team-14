@@ -27,8 +27,7 @@
             
             </li>
             <li>
-                <a href ="#" onclick="load_volunteer_details(<?php session_start();
-   echo $_SESSION['username'];?>)"   >
+                <a href ="#" onclick="load_volunteer_details()"   >
                     <i class="fa fa-users fa-2x"></i>
                     <span class="nav-text">
                         Volunteers  
