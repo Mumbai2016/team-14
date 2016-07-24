@@ -92,8 +92,8 @@ if (mysqli_query($conn, $sql)) {
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "team14";
+$password = "team14";
 $dbname = "atma";
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
