@@ -83,10 +83,11 @@ if ($result->num_rows > 0) {
       //   $stmt = $conn->prepare($sql);
     // execute the query
       //  $stmt->execute();
-     //  header('Location: '.$_SERVER['PHP_SELF']);
-	   die;
+       header("Location: ".$_SERVER['PHP_SELF']);
+	  
         // Do the database update code to set Accept
-        
+    
+//      header("Location: screening.php")
     }
 
      if (isset($_POST['selected'])) {
@@ -126,9 +127,11 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-    
+  $conn->close();
+//    header("Location: screening.php");
     }
-     $conn->close();
+      $conn->close();
+  
     ?>
 
 	</div>
