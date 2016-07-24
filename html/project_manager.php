@@ -14,13 +14,10 @@
     <nav class="main-menu">
         <ul>
             <li>
-                <a href="project_manager" >
+                <a href="project_manager.php" >
                     <i class="fa fa-user fa-2x"></i>
                     <span class="nav-text">
-                        <?php
-    					        session_start();
-    	                        echo $_SESSION["username"];
-    					?>
+                        User
                     </span>
                 </a>
             </li>

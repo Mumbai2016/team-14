@@ -46,13 +46,13 @@
                 <a href="#">
                    <i class="fa fa-list fa-2x"></i>
                     <span class="nav-text">
-                        Feedback Forms
+                        Project Updation Forms
                     </span>
                 </a>
                 
             </li>
             <li class="has-subnav">
-                <a href="#">
+                <a href="#" onclick="load_volunteer_projects()">
                    <i class="fa fa-folder-open fa-2x"></i>
                     <span class="nav-text">
                         Projects
