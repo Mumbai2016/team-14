@@ -19,13 +19,16 @@
                 <a href="volunteer.php" >
                     <i class="fa fa-user fa-2x"></i>
                     <span class="nav-text">
-                        Account
+                     <?php
+								session_start();
+					 echo $_SESSION["username"]; ?>
                     </span>
                 </a>
             
             </li>
             <li>
-                <a href ="#" onclick="load_volunteer_details()"   >
+                <a href ="#" onclick="load_volunteer_details(<?php session_start();
+   echo $_SESSION['username'];?>)"   >
                     <i class="fa fa-users fa-2x"></i>
                     <span class="nav-text">
                         Volunteers  
@@ -116,7 +119,8 @@
 
     <div id="area">
         <div class="page-header">
-            <h1><center>User Name</center></h1>
+            <h1><center><?php 
+					 echo $_SESSION["username"];  ?></center></h1>
         </div>
         <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500" style="width: 400px;height: 400px;">
 
