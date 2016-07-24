@@ -54,7 +54,7 @@
                 </label>
             </div>
             <div class="form-row">
-                <label><span>Gender</span></label>
+                <label><span id="gender">Gender</span></label>
                 <div class="form-radio-buttons">
 
                     
@@ -77,20 +77,20 @@
             <div class="form-row">
                 <label>
                     <span>BLOOD GROUP</span>
-                    <input type="text" name="bg" >
+                    <input id="bloodgroup" type="text" name="bg" >
                 </label>
             </div>
             <div class="form-row">
                 <label>
                     <span>Email</span>
-                    <input type="email" name="email">
+                    <input id="email" type="email" name="email">
                 </label>
             </div>
 
              <div class="form-row">
                 <label>
                     <span>DOB</span>
-                      <input type="date" name="dob">
+                      <input id="dob" type="date" name="dob">
                 </label>
             </div>
 
@@ -102,13 +102,13 @@
              <div class="form-row">
                 <label>
                     <span>Degree</span>
-             <input type="text" name="degree">
+             <input id="degree" type="text" name="degree">
              </label>
              </div>
              <div class="form-row">
                 <label>
                     <span>Field Expertise</span>
-             <input type="text" name="expertise">
+             <input id="expertise" type="text" name="expertise">
              </label>
              </div>
             </fieldset>
@@ -119,19 +119,19 @@
              <div class="form-row">
                 <label>
                     <span>What motivated you to apply?</span>
-             <input type="textarea" name="motivation">
+             <input id="motivation" type="textarea" name="motivation">
              </label>
              </div>
              <div class="form-row">
                 <label>
                     <span>Past Experiences</span>
-             <input type="textarea" name="exp">
+             <input id="exp" type="textarea" name="exp">
              </label>
              </div>
              <div class="form-row">
                 <label>
                     <span>Upload Resume</span>
-            <input type="file" name="resume">
+            <input id="resume" type="file" name="resume">
              </label>
              </div>
             </fieldset>
