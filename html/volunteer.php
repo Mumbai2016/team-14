@@ -61,7 +61,7 @@
                
             </li>
             <li>
-                <a href="#">
+                <a href="#" onclick="load_graph()">
                     <i class="fa fa-bar-chart-o fa-2x"></i>
                     <span class="nav-text">
                         Graphs and Statistics
