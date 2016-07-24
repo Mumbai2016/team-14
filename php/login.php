@@ -4,7 +4,7 @@ $username=$_POST['username'];
 $password=$_POST['password'];
 
 
-$conn = mysqli_connect("localhost:3307","root","","atma");
+$conn = mysqli_connect("localhost","root","","atma");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
