@@ -11,6 +11,9 @@
 
 	<link rel="stylesheet" href="..\css\assets\demo.css">
 	<link rel="stylesheet" href="..\css\assets\form-basic.css">
+    <link rel="stylesheet" href="../css/volunteer.css" />
+    <link href="../css/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
 <body>
@@ -23,9 +26,16 @@
 
         <!-- You only need this form and the form-basic.css -->
          
-        <form class="form-basic" method="post" action="#">
+        <form class="form-basic" method="post" action="../php/registration.php">
         <div class="form-title-row">
+            <div style="float:right;margin-top:-60px;">
+                <a href="dashboard.php">
+                   <i class="fa fa-folder-close fa-2x">Close</i>
+                   
+                </a>
+            </div>
                 <h1>Be a Volunteer!!</h1>
+
             </div>
        
            <fieldset>
@@ -125,10 +135,11 @@
              </label>
              </div>
             </fieldset>
-            
-            <div class="form-row">
-                <button type="submit">Submit Application</button>
-            </div>
+            <div>
+                <div class="form-row">
+                    <button type="submit">Submit Application</button>
+                </div>
+
             </form>
 
     </div>

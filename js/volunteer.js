@@ -26,3 +26,7 @@ function load_edit_profile(username){
 function load_graph(){
 	document.getElementById("area").innerHTML='<object type="text/php" data="graph.php" style="height:100%;width:100%;" ></object>';
 }
+
+function load_volunteer_projects(){
+	document.getElementById("area").innerHTML='<object type="text/php" data="volunteer_projects.php" style="height:100%;width:100%;" ></object>';
+}

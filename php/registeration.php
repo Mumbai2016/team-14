@@ -16,7 +16,7 @@
   
    $query="insert into volunteer(firstname,lastname,contact,email,date_of_joining,dob,age,gender) values('$fname','$lname','$contact','$email','$doj','$bday','$age','$gender')";
    $result=mysqli_query($dbc,$query) or die(mysqli_error()." in ".$query);
-  
+   header("../html/dashboard.php");  
 
 
 

@@ -9,6 +9,7 @@
     <h2>Volunteer Details</h2>
     </div>
 
+
 <?php
 $servername = "localhost";
 $username = "team14";
@@ -19,6 +20,88 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+
+
+ if (isset($_POST['screened'])) {
+        $s = $_POST['hidd'];
+      //  echo $s;
+      $sql = "UPDATE volunteer SET screened='yes' WHERE id='".$s."'";
+    //  $sql = "SELECT * FROM volunteer";
+   if ($conn->query($sql) === TRUE) {
+   
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+    
+    //  $row = $result->fetch_assoc();
+
+
+       // $sql = 'UPDATE volunteer SET screened="yes" WHERE name='".$s."';
+      //   $stmt = $conn->prepare($sql);
+    // execute the query
+      //  $stmt->execute();
+     $conn->close();
+  
+    }
+
+
+     if (isset($_POST['selected'])) {
+        $s = $_POST['hidd'];
+      //  echo $s;
+      $sql = "UPDATE volunteer SET selected='yes' WHERE id='".$s."'";
+    //  $sql = "SELECT * FROM volunteer";
+   if ($conn->query($sql) === TRUE) {
+   
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+  $sql = "SELECT * FROM volunteer where id='".$s."'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+  
+    $id=$row["id"];
+    $name=$row["name"];
+    $con=$row["contact"];
+    $email=$row["email"];
+    $fn=$row["file_name"];
+    $dob=$row["dob"];
+    $gender=$row["gender"];
+    $pp=$row["pic_path"];
+    $p=$row["p_id"];
+    $deg=$row["degree"];
+    $m=$row["motivation"];
+    $ex=$row["expertise"];
+    $pe=$row["past_exp"];
+    $bg=$row["blood_group"];
+    $sc=$row["screened"];
+    $se=$row["selected"];
+    $sql="INSERT INTO selected_volunteers VALUES ('$id','$name','$con','$email','fn','$dob','$gender','$pp','$p','$deg','$m','$ex','pe','$bg','$sc','$se')";
+
+if (mysqli_query($conn, $sql)) {
+   
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+  $conn->close();
+//    header("Location: screening.php");
+    }
+     
+  
+    ?>
+
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "atma";
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
 
 $sql = "SELECT * FROM volunteer";
 $result = $conn->query($sql);
@@ -64,75 +147,7 @@ if ($result->num_rows > 0) {
 	echo'</table>';
     
 ?>
-<?php
- if (isset($_POST['screened'])) {
-        $s = $_POST['hidd'];
-      //  echo $s;
-      $sql = "UPDATE volunteer SET screened='yes' WHERE id='".$s."'";
-    //  $sql = "SELECT * FROM volunteer";
-   if ($conn->query($sql) === TRUE) {
-   
-} else {
-    echo "Error updating record: " . $conn->error;
-}
-		
-    //  $row = $result->fetch_assoc();
 
-
-       // $sql = 'UPDATE volunteer SET screened="yes" WHERE name='".$s."';
-      //   $stmt = $conn->prepare($sql);
-    // execute the query
-      //  $stmt->execute();
-       header("Location: ".$_SERVER['PHP_SELF']);
-	  
-        // Do the database update code to set Accept
-    
-//      header("Location: screening.php")
-    }
-
-     if (isset($_POST['selected'])) {
-        $s = $_POST['hidd'];
-      //  echo $s;
-      $sql = "UPDATE volunteer SET selected='yes' WHERE id='".$s."'";
-    //  $sql = "SELECT * FROM volunteer";
-   if ($conn->query($sql) === TRUE) {
-   
-} else {
-    echo "Error updating record: " . $conn->error;
-}
-	$sql = "SELECT * FROM volunteer where id='".$s."'";
-    $result = $conn->query($sql);
-    $row = $result->fetch_assoc();
-	
-    $id=$row["id"];
-    $name=$row["name"];
-    $con=$row["contact"];
-    $email=$row["email"];
-    $fn=$row["file_name"];
-    $dob=$row["dob"];
-    $gender=$row["gender"];
-    $pp=$row["pic_path"];
-    $p=$row["p_id"];
-    $deg=$row["degree"];
-    $m=$row["motivation"];
-    $ex=$row["expertise"];
-    $pe=$row["past_exp"];
-    $bg=$row["blood_group"];
-    $sc=$row["screened"];
-    $se=$row["selected"];
-    $sql="INSERT INTO selected_volunteers VALUES ('$id','$name','$con','$email','fn','$dob','$gender','$pp','$p','$deg','$m','$ex','pe','$bg','$sc','$se')";
-
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-  $conn->close();
-//    header("Location: screening.php");
-    }
-      $conn->close();
-  
-    ?>
 
 	</div>
 	</div>
