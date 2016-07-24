@@ -21,7 +21,7 @@ public class TopExpand extends AppCompatActivity {
             case "Top Valunteer":
                 currentName.setText("Niveta Lavhate");
                 currentImage.setImageResource(R.drawable.girl);
-                currentSummary.setText("Volunteering with ATMA foundation was one of the best decisions I ever made. Not only did it provide me great exposure and hands on experience organising and managing events, it also brought about the much needed tact I lacked in handling certain relationships. Today looking back, I miss the pearls of wisdom that was freely given, the constant vibe of camaraderie, and the fresh and hot afternoon snacks! ATMA foundation will always be thought of with a feeling of immense gratitude");
+                currentSummary.setText("Volunteering with ATMA foundation was one of the best decisions I ever made.");
 
                 currentProject1.setImageResource(R.drawable.ngo3);
                 currentProject2.setImageResource(R.drawable.ngo5);
@@ -39,7 +39,7 @@ public class TopExpand extends AppCompatActivity {
 
                 currentName.setText("Ronak Parmar");
                 currentImage.setImageResource(R.drawable.boy);
-                currentSummary.setText("Living in Harmony’ training programme has highly improved the happiness quotient of our employees. We realised that a happy family of every employee results in better productivity at work effortlessly and it inevitably results in higher customer satisfaction.");
+                currentSummary.setText("Living in Harmony’ training programme has highly improved the happiness quotient of our employees.");
 
                 currentProject1.setImageResource(R.drawable.ngo4);
                 currentProject2.setImageResource(R.drawable.ngo3);
@@ -57,7 +57,7 @@ public class TopExpand extends AppCompatActivity {
 
                 currentName.setText("Mama's Children");
                 currentImage.setImageResource(R.drawable.ngo1);
-                currentSummary.setText(" Atma, to meet us, has been about meeting an organization that has integrity and is intelligent and noble. That some people exist who do care honestly about giving, and are also wise about how to give, and that they give with no expectations of returns is an eye opener. Atma has touched many individuals with wise counsel – thereby inspiring them to break open their shells and lead better, richer lives.");
+                currentSummary.setText(" Atma, to meet us, has been about meeting an organization that has integrity and is intelligent and noble.");
 
                 currentProject1.setImageResource(R.drawable.ngo1);
                 currentProject2.setImageResource(R.drawable.ngo4);
@@ -69,7 +69,7 @@ public class TopExpand extends AppCompatActivity {
                 currentProjectTitle3.setText("Bread for the world");
                 currentProjectTitle1.setText("Smile");
 
-                TopTypeIndicator.setText("Top Partner Manager");
+                TopTypeIndicator.setText("Top NGO");
 
                 break;
         }

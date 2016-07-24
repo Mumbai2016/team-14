@@ -28,6 +28,7 @@
                 android:text="NGO Name"
                 android:textSize="28sp"
                 android:textStyle="bold"
+                android:id="@+id/ngoname"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
@@ -35,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="Summary..."
                 android:textSize="20sp"
+                android:id="@+id/ngosummary"
                 android:layout_gravity="center_horizontal" />
 
             <TextView

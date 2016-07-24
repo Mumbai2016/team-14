@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
            switch (userType){
                case "NGO":
                    startActivity(new Intent(this,NGOActivity.class));
+                   finish();
                    break;
            }
 
