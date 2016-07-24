@@ -4,7 +4,7 @@ $username=$_POST['username'];
 $password=$_POST['password'];
 
 
-$conn = mysqli_connect("localhost:3307","root","","atma");
+$conn = mysqli_connect("localhost","root","root","atma");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -17,8 +17,10 @@ echo "Connected successfully";
  $my_id_array=mysqli_fetch_assoc($result);
    
     $pass_array=$my_id_array['password'];
+    $role = $my_id_array['role'];
     if($pass_array==$password)
     {
+<<<<<<< HEAD
 	 session_start();
 	 $_SESSION["username"]=$username;
 	 //$query2 = mysql_query("SELECT * FROM users WHERE role='volunteer'");
@@ -42,6 +44,20 @@ echo "Connected successfully";
 	//else
 	//header("Location:http://localhost:83/codeforgood/team-14/html/project_manager.php");
      print "success";
+=======
+    	session_start();
+    	$_SESSION["username"]=$username;
+        if( $role == "volunteer"){
+            header("../html/volunteer.php");
+        }
+        if( $role == "ngo_patner" ){
+
+        }
+        if( $role == "partnership_manager" ){
+            header("../html/project_manager.php");
+        }
+        print "success";
+>>>>>>> 7ffd1a1086e03131cdef78179e0ba0fe365c39f4
     }
     else
     {

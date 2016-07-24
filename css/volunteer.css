@@ -22,7 +22,7 @@ overflow:visible;
 }
 
 .main-menu {
-background:#fbfbfb;
+background:black;
 border-right:1px solid #e5e5e5;
 position:absolute;
 top:0;
@@ -121,9 +121,10 @@ div#area {
 position: relative;
 float: left;
 background: #e2e2e2;
-width: 95%;
-height: 100%;
-margin-left: 4em;
+width: 94%;
+height: 97%;
+margin-top: 0.5%;
+margin-left: 5%;
 }
 @font-face {
   font-family: 'Titillium Web';
@@ -132,3 +133,29 @@ margin-left: 4em;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
 
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.header-text{
+	position: relative;
+	top: -100;
+	left: 100;
+	width: 300px;
+	height: 400px;
+	font-size: 20px;
+}
+
+.logo{
+	font-size: 12px;
+	margin: 0;
+}

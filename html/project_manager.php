@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="../css/project_manager.css" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/project_manager.js" type="text/javascript"></script>
-    </script>
 </head>
 <body>
-    <div>
+<div>
     <nav class="main-menu">
         <ul>
             <li>
-                <i class="fa fa-home fa-2x"></i>
-                <span class="nav-text">
-                    <?php
-					        session_start();
-	                        echo $_SESSION["username"];
-					?>
-                </span>
-            
+                <a href="project_manager" >
+                    <i class="fa fa-user fa-2x"></i>
+                    <span class="nav-text">
+                        <?php
+    					        session_start();
+    	                        echo $_SESSION["username"];
+    					?>
+                    </span>
+                </a>
             </li>
             <li>
                 <a href ="#" onclick="load()"   >
@@ -34,10 +34,10 @@
               
             </li>
             <li class="has-subnav">
-                <a href="#">
-                    <i class="fa fa-laptop fa-2x"></i>
+                <a href="#" onclick="load_volunteer_details()">
+                    <i class="fa fa-users fa-2x"></i>
                     <span class="nav-text">
-                        UI Components
+                        Volunteers
                     </span>
                 </a>
                 
@@ -52,10 +52,10 @@
                 
             </li>
             <li class="has-subnav">
-                <a href="#">
-                   <i class="fa fa-folder-open fa-2x"></i>
+                <a href="#" onclick="load_organisations()">
+                   <i class="fa fa-map-marker fa-2x"></i>
                     <span class="nav-text">
-                        Pages
+                        Organisations
                     </span>
                 </a>
                
@@ -65,30 +65,6 @@
                     <i class="fa fa-bar-chart-o fa-2x"></i>
                     <span class="nav-text">
                         Graphs and Statistics
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-font fa-2x"></i>
-                    <span class="nav-text">
-                        Typography and Icons
-                    </span>
-                </a>
-            </li>
-            <li>
-               <a href="#">
-                   <i class="fa fa-table fa-2x"></i>
-                    <span class="nav-text">
-                        Tables
-                    </span>
-                </a>
-            </li>
-            <li>
-               <a href="#">
-                    <i class="fa fa-map-marker fa-2x"></i>
-                    <span class="nav-text">
-                        Maps
                     </span>
                 </a>
             </li>
@@ -116,7 +92,7 @@
 
     <div id="area">
     </div>
-    </div>
+</div>
 
 </body>
 </html>
