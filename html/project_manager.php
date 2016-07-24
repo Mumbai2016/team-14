@@ -77,7 +77,7 @@
 
         <ul class="logout">
             <li>
-               <a href="dashbaord.php">
+               <a href="dashboard.php">
                      <i class="fa fa-power-off fa-2x"></i>
                     <span class="nav-text">
                         Logout
