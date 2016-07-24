@@ -58,10 +58,10 @@
                
             </li>
             <li>
-                <a href="#">
+                <a href="#" onclick="load_screening()">
                     <i class="fa fa-bar-chart-o fa-2x"></i>
                     <span class="nav-text">
-                        Graphs and Statistics
+                        Screening
                     </span>
                 </a>
             </li>
@@ -77,7 +77,7 @@
 
         <ul class="logout">
             <li>
-               <a href="#">
+               <a href="dashbaord.php">
                      <i class="fa fa-power-off fa-2x"></i>
                     <span class="nav-text">
                         Logout

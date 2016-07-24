@@ -45,19 +45,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Atma</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" style="float:right;">
                     <li>
-                        <a href="#">About</a>
+                        <a href="login.php">LOGIN</a>
                     </li>
                     <li>
-                        <a href="#">Register</a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
+                        <a href="registration.php">REGISTRATION</a>
                     </li>
                 </ul>
             </div>
